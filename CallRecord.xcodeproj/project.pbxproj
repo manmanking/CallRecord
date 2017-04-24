@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		241616CD1EAC3FB1003D8B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 241616CC1EAC3FB1003D8B14 /* main.m */; };
+		241616D61EAC3FB1003D8B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241616D41EAC3FB1003D8B14 /* Main.storyboard */; };
+		241616D81EAC3FB1003D8B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241616D71EAC3FB1003D8B14 /* Assets.xcassets */; };
+		241616DB1EAC3FB1003D8B14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241616D91EAC3FB1003D8B14 /* LaunchScreen.storyboard */; };
+		241616EA1EAC46EB003D8B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 241616E91EAC46EB003D8B14 /* AppDelegate.m */; };
+		241616ED1EAC46FF003D8B14 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241616EC1EAC46FF003D8B14 /* BaseViewController.m */; };
+		241616FB1EAC4D2D003D8B14 /* CallRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241616FA1EAC4D2D003D8B14 /* CallRecordViewController.m */; };
+		241616FF1EAC4D88003D8B14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241616FE1EAC4D88003D8B14 /* ViewController.m */; };
+		241617031EAC526F003D8B14 /* TimeConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 241617021EAC526F003D8B14 /* TimeConvert.m */; };
+		241617081EAC7750003D8B14 /* AudioRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241617071EAC7750003D8B14 /* AudioRecordViewController.m */; };
+		5E5E1702EFD71F52835A624A /* libPods-CallRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B4B707C982B3FFA6BECBE /* libPods-CallRecord.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		241616C81EAC3FB1003D8B14 /* CallRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		241616CC1EAC3FB1003D8B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		241616D51EAC3FB1003D8B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		241616D71EAC3FB1003D8B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		241616DA1EAC3FB1003D8B14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		241616DC1EAC3FB1003D8B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		241616E81EAC46EB003D8B14 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Root/AppDelegate.h; sourceTree = "<group>"; };
+		241616E91EAC46EB003D8B14 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Root/AppDelegate.m; sourceTree = "<group>"; };
+		241616EB1EAC46FF003D8B14 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Root/BaseViewController.h; sourceTree = "<group>"; };
+		241616EC1EAC46FF003D8B14 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Root/BaseViewController.m; sourceTree = "<group>"; };
+		241616F91EAC4D2D003D8B14 /* CallRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallRecordViewController.h; path = Function/CallRecordHome/Controller/CallRecordViewController.h; sourceTree = "<group>"; };
+		241616FA1EAC4D2D003D8B14 /* CallRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallRecordViewController.m; path = Function/CallRecordHome/Controller/CallRecordViewController.m; sourceTree = "<group>"; };
+		241616FD1EAC4D88003D8B14 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Function/Main/Controller/ViewController.h; sourceTree = "<group>"; };
+		241616FE1EAC4D88003D8B14 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Function/Main/Controller/ViewController.m; sourceTree = "<group>"; };
+		241617011EAC526F003D8B14 /* TimeConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeConvert.h; path = Util/TimeConvert.h; sourceTree = "<group>"; };
+		241617021EAC526F003D8B14 /* TimeConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeConvert.m; path = Util/TimeConvert.m; sourceTree = "<group>"; };
+		241617061EAC7750003D8B14 /* AudioRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioRecordViewController.h; path = Function/AudioRecordHome/Controller/AudioRecordViewController.h; sourceTree = "<group>"; };
+		241617071EAC7750003D8B14 /* AudioRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioRecordViewController.m; path = Function/AudioRecordHome/Controller/AudioRecordViewController.m; sourceTree = "<group>"; };
+		25059C5E352541F3D5E3D3F6 /* Pods-CallRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallRecord/Pods-CallRecord.release.xcconfig"; sourceTree = "<group>"; };
+		787B4B707C982B3FFA6BECBE /* libPods-CallRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DAF9BE8917896702DF97138 /* Pods-CallRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallRecord/Pods-CallRecord.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		241616C51EAC3FB1003D8B14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5E1702EFD71F52835A624A /* libPods-CallRecord.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01DEFFEFDD35335AF367E9AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DAF9BE8917896702DF97138 /* Pods-CallRecord.debug.xcconfig */,
+				25059C5E352541F3D5E3D3F6 /* Pods-CallRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		241616BF1EAC3FB0003D8B14 = {
+			isa = PBXGroup;
+			children = (
+				241616CA1EAC3FB1003D8B14 /* CallRecord */,
+				241616C91EAC3FB1003D8B14 /* Products */,
+				01DEFFEFDD35335AF367E9AB /* Pods */,
+				F8600FB12AFD664B48267BE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		241616C91EAC3FB1003D8B14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				241616C81EAC3FB1003D8B14 /* CallRecord.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		241616CA1EAC3FB1003D8B14 /* CallRecord */ = {
+			isa = PBXGroup;
+			children = (
+				241617001EAC51E4003D8B14 /* Util */,
+				241616E71EAC46D5003D8B14 /* Root */,
+				241616E21EAC45A2003D8B14 /* Function */,
+				241616D41EAC3FB1003D8B14 /* Main.storyboard */,
+				241616D71EAC3FB1003D8B14 /* Assets.xcassets */,
+				241616D91EAC3FB1003D8B14 /* LaunchScreen.storyboard */,
+				241616DC1EAC3FB1003D8B14 /* Info.plist */,
+				241616CB1EAC3FB1003D8B14 /* Supporting Files */,
+			);
+			path = CallRecord;
+			sourceTree = "<group>";
+		};
+		241616CB1EAC3FB1003D8B14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				241616CC1EAC3FB1003D8B14 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		241616E21EAC45A2003D8B14 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				241617041EAC76C0003D8B14 /* AudioRecordHome */,
+				241616FC1EAC4D4C003D8B14 /* Main */,
+				241616F11EAC4C62003D8B14 /* CallRecordHome */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		241616E31EAC45B3003D8B14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				241616FD1EAC4D88003D8B14 /* ViewController.h */,
+				241616FE1EAC4D88003D8B14 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		241616E41EAC45FE003D8B14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		241616E51EAC4606003D8B14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		241616E61EAC460C003D8B14 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		241616E71EAC46D5003D8B14 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				241616E81EAC46EB003D8B14 /* AppDelegate.h */,
+				241616E91EAC46EB003D8B14 /* AppDelegate.m */,
+				241616EB1EAC46FF003D8B14 /* BaseViewController.h */,
+				241616EC1EAC46FF003D8B14 /* BaseViewController.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		241616F11EAC4C62003D8B14 /* CallRecordHome */ = {
+			isa = PBXGroup;
+			children = (
+				241616F81EAC4CE9003D8B14 /* Manager */,
+				241616F71EAC4CDE003D8B14 /* Model */,
+				241616F61EAC4CD6003D8B14 /* View */,
+				241616F51EAC4CCB003D8B14 /* Controller */,
+			);
+			name = CallRecordHome;
+			sourceTree = "<group>";
+		};
+		241616F51EAC4CCB003D8B14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				241616F91EAC4D2D003D8B14 /* CallRecordViewController.h */,
+				241616FA1EAC4D2D003D8B14 /* CallRecordViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		241616F61EAC4CD6003D8B14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		241616F71EAC4CDE003D8B14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		241616F81EAC4CE9003D8B14 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		241616FC1EAC4D4C003D8B14 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				241616E61EAC460C003D8B14 /* Manager */,
+				241616E51EAC4606003D8B14 /* Model */,
+				241616E41EAC45FE003D8B14 /* View */,
+				241616E31EAC45B3003D8B14 /* Controller */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		241617001EAC51E4003D8B14 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				241617011EAC526F003D8B14 /* TimeConvert.h */,
+				241617021EAC526F003D8B14 /* TimeConvert.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		241617041EAC76C0003D8B14 /* AudioRecordHome */ = {
+			isa = PBXGroup;
+			children = (
+				241617051EAC7723003D8B14 /* Controller */,
+			);
+			name = AudioRecordHome;
+			sourceTree = "<group>";
+		};
+		241617051EAC7723003D8B14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				241617061EAC7750003D8B14 /* AudioRecordViewController.h */,
+				241617071EAC7750003D8B14 /* AudioRecordViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F8600FB12AFD664B48267BE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				787B4B707C982B3FFA6BECBE /* libPods-CallRecord.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		241616C71EAC3FB1003D8B14 /* CallRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 241616DF1EAC3FB1003D8B14 /* Build configuration list for PBXNativeTarget "CallRecord" */;
+			buildPhases = (
+				8EC684E67E4D0702B9EF072C /* [CP] Check Pods Manifest.lock */,
+				241616C41EAC3FB1003D8B14 /* Sources */,
+				241616C51EAC3FB1003D8B14 /* Frameworks */,
+				241616C61EAC3FB1003D8B14 /* Resources */,
+				8EBCA6D4408E95A37B2502FE /* [CP] Embed Pods Frameworks */,
+				280BAE4584C543FB45245DC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallRecord;
+			productName = CallRecord;
+			productReference = 241616C81EAC3FB1003D8B14 /* CallRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		241616C01EAC3FB0003D8B14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = manman;
+				TargetAttributes = {
+					241616C71EAC3FB1003D8B14 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = P927RN6N64;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 241616C31EAC3FB0003D8B14 /* Build configuration list for PBXProject "CallRecord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 241616BF1EAC3FB0003D8B14;
+			productRefGroup = 241616C91EAC3FB1003D8B14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				241616C71EAC3FB1003D8B14 /* CallRecord */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		241616C61EAC3FB1003D8B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241616DB1EAC3FB1003D8B14 /* LaunchScreen.storyboard in Resources */,
+				241616D81EAC3FB1003D8B14 /* Assets.xcassets in Resources */,
+				241616D61EAC3FB1003D8B14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		280BAE4584C543FB45245DC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallRecord/Pods-CallRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBCA6D4408E95A37B2502FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallRecord/Pods-CallRecord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EC684E67E4D0702B9EF072C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		241616C41EAC3FB1003D8B14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241617031EAC526F003D8B14 /* TimeConvert.m in Sources */,
+				241616EA1EAC46EB003D8B14 /* AppDelegate.m in Sources */,
+				241616ED1EAC46FF003D8B14 /* BaseViewController.m in Sources */,
+				241616FB1EAC4D2D003D8B14 /* CallRecordViewController.m in Sources */,
+				241616CD1EAC3FB1003D8B14 /* main.m in Sources */,
+				241617081EAC7750003D8B14 /* AudioRecordViewController.m in Sources */,
+				241616FF1EAC4D88003D8B14 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		241616D41EAC3FB1003D8B14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				241616D51EAC3FB1003D8B14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		241616D91EAC3FB1003D8B14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				241616DA1EAC3FB1003D8B14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		241616DD1EAC3FB1003D8B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		241616DE1EAC3FB1003D8B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		241616E01EAC3FB1003D8B14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DAF9BE8917896702DF97138 /* Pods-CallRecord.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P927RN6N64;
+				INFOPLIST_FILE = CallRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.press.CallRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		241616E11EAC3FB1003D8B14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25059C5E352541F3D5E3D3F6 /* Pods-CallRecord.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P927RN6N64;
+				INFOPLIST_FILE = CallRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.press.CallRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		241616C31EAC3FB0003D8B14 /* Build configuration list for PBXProject "CallRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241616DD1EAC3FB1003D8B14 /* Debug */,
+				241616DE1EAC3FB1003D8B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		241616DF1EAC3FB1003D8B14 /* Build configuration list for PBXNativeTarget "CallRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241616E01EAC3FB1003D8B14 /* Debug */,
+				241616E11EAC3FB1003D8B14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 241616C01EAC3FB0003D8B14 /* Project object */;
+}

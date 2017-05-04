@@ -9,11 +9,14 @@
 #import "ViewController.h"
 #import "CallRecordViewController.h"
 #import "AudioRecordViewController.h"
+#import "WIFIViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) NSArray *datasourcesArr;
 
 
 
@@ -30,6 +33,7 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
     self.tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
     [self.tableView registerClass:[UITableViewCell class]forCellReuseIdentifier:tableViewCellIdentify];
     
     [self.view addSubview:self.tableView];
@@ -71,6 +75,9 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
         
         cell.textLabel.text = @"录音";
     }
+    if (indexPath.section == 1 && indexPath.row == 2) {
+        cell.textLabel.text = @"获得WI-FI名称";
+    }
     
     return cell;
     
@@ -98,6 +105,17 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
         
         
     }
+    
+    if (indexPath.section == 1 &&indexPath.row == 2) {
+        
+        WIFIViewController *viewController = [[WIFIViewController alloc]init];
+        [self.navigationController pushViewController:viewController animated:true];
+        
+        
+        
+    }
+    
+    
     
     
 }

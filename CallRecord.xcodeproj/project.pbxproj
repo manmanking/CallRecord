@@ -17,7 +17,10 @@
 		241616FF1EAC4D88003D8B14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241616FE1EAC4D88003D8B14 /* ViewController.m */; };
 		241617031EAC526F003D8B14 /* TimeConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 241617021EAC526F003D8B14 /* TimeConvert.m */; };
 		241617081EAC7750003D8B14 /* AudioRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241617071EAC7750003D8B14 /* AudioRecordViewController.m */; };
-		2480D0361EBAB017006BB40F /* WIFIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2480D0351EBAB017006BB40F /* WIFIViewController.m */; };
+		242E599E1F19EE720018D485 /* WIFIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E599D1F19EE720018D485 /* WIFIViewController.m */; };
+		242E59A21F19F1EC0018D485 /* CycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242E59A11F19F1EC0018D485 /* CycleViewController.swift */; };
+		24CEC9E31EF38F2F009F7BB9 /* Airmole Shaded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24CEC9E11EF38F2F009F7BB9 /* Airmole Shaded.ttf */; };
+		24CEC9E41EF38F2F009F7BB9 /* Alexis 3D.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24CEC9E21EF38F2F009F7BB9 /* Alexis 3D.ttf */; };
 		5E5E1702EFD71F52835A624A /* libPods-CallRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B4B707C982B3FFA6BECBE /* libPods-CallRecord.a */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +43,12 @@
 		241617021EAC526F003D8B14 /* TimeConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeConvert.m; path = Util/TimeConvert.m; sourceTree = "<group>"; };
 		241617061EAC7750003D8B14 /* AudioRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioRecordViewController.h; path = Function/AudioRecordHome/Controller/AudioRecordViewController.h; sourceTree = "<group>"; };
 		241617071EAC7750003D8B14 /* AudioRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioRecordViewController.m; path = Function/AudioRecordHome/Controller/AudioRecordViewController.m; sourceTree = "<group>"; };
-		2480D0341EBAB017006BB40F /* WIFIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WIFIViewController.h; path = Function/WIFIViewController.h; sourceTree = "<group>"; };
-		2480D0351EBAB017006BB40F /* WIFIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WIFIViewController.m; path = Function/WIFIViewController.m; sourceTree = "<group>"; };
+		242E599C1F19EE720018D485 /* WIFIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WIFIViewController.h; path = Function/WIFI/WIFIViewController.h; sourceTree = "<group>"; };
+		242E599D1F19EE720018D485 /* WIFIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WIFIViewController.m; path = Function/WIFI/WIFIViewController.m; sourceTree = "<group>"; };
+		242E59A01F19F1EC0018D485 /* CallRecord-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CallRecord-Bridging-Header.h"; sourceTree = "<group>"; };
+		242E59A11F19F1EC0018D485 /* CycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CycleViewController.swift; path = Function/CycleView/CycleViewController.swift; sourceTree = "<group>"; };
+		24CEC9E11EF38F2F009F7BB9 /* Airmole Shaded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Airmole Shaded.ttf"; path = "Resources/Airmole Shaded.ttf"; sourceTree = "<group>"; };
+		24CEC9E21EF38F2F009F7BB9 /* Alexis 3D.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alexis 3D.ttf"; path = "Resources/Alexis 3D.ttf"; sourceTree = "<group>"; };
 		25059C5E352541F3D5E3D3F6 /* Pods-CallRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallRecord/Pods-CallRecord.release.xcconfig"; sourceTree = "<group>"; };
 		787B4B707C982B3FFA6BECBE /* libPods-CallRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAF9BE8917896702DF97138 /* Pods-CallRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallRecord/Pods-CallRecord.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +96,7 @@
 		241616CA1EAC3FB1003D8B14 /* CallRecord */ = {
 			isa = PBXGroup;
 			children = (
+				24CEC9E01EF38EB0009F7BB9 /* Resources */,
 				241617001EAC51E4003D8B14 /* Util */,
 				241616E71EAC46D5003D8B14 /* Root */,
 				241616E21EAC45A2003D8B14 /* Function */,
@@ -104,6 +112,7 @@
 		241616CB1EAC3FB1003D8B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				242E59A01F19F1EC0018D485 /* CallRecord-Bridging-Header.h */,
 				241616CC1EAC3FB1003D8B14 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -112,11 +121,11 @@
 		241616E21EAC45A2003D8B14 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				242E599F1F19F19E0018D485 /* CycleView */,
+				242E599B1F19EE550018D485 /* WIFI */,
 				241617041EAC76C0003D8B14 /* AudioRecordHome */,
 				241616FC1EAC4D4C003D8B14 /* Main */,
 				241616F11EAC4C62003D8B14 /* CallRecordHome */,
-				2480D0341EBAB017006BB40F /* WIFIViewController.h */,
-				2480D0351EBAB017006BB40F /* WIFIViewController.m */,
 			);
 			name = Function;
 			sourceTree = "<group>";
@@ -240,6 +249,32 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		242E599B1F19EE550018D485 /* WIFI */ = {
+			isa = PBXGroup;
+			children = (
+				242E599C1F19EE720018D485 /* WIFIViewController.h */,
+				242E599D1F19EE720018D485 /* WIFIViewController.m */,
+			);
+			name = WIFI;
+			sourceTree = "<group>";
+		};
+		242E599F1F19F19E0018D485 /* CycleView */ = {
+			isa = PBXGroup;
+			children = (
+				242E59A11F19F1EC0018D485 /* CycleViewController.swift */,
+			);
+			name = CycleView;
+			sourceTree = "<group>";
+		};
+		24CEC9E01EF38EB0009F7BB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24CEC9E11EF38F2F009F7BB9 /* Airmole Shaded.ttf */,
+				24CEC9E21EF38F2F009F7BB9 /* Alexis 3D.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F8600FB12AFD664B48267BE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,7 +317,7 @@
 				TargetAttributes = {
 					241616C71EAC3FB1003D8B14 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = P927RN6N64;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,8 +345,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24CEC9E31EF38F2F009F7BB9 /* Airmole Shaded.ttf in Resources */,
 				241616DB1EAC3FB1003D8B14 /* LaunchScreen.storyboard in Resources */,
 				241616D81EAC3FB1003D8B14 /* Assets.xcassets in Resources */,
+				24CEC9E41EF38F2F009F7BB9 /* Alexis 3D.ttf in Resources */,
 				241616D61EAC3FB1003D8B14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,12 +408,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242E59A21F19F1EC0018D485 /* CycleViewController.swift in Sources */,
 				241617031EAC526F003D8B14 /* TimeConvert.m in Sources */,
 				241616EA1EAC46EB003D8B14 /* AppDelegate.m in Sources */,
 				241616ED1EAC46FF003D8B14 /* BaseViewController.m in Sources */,
 				241616FB1EAC4D2D003D8B14 /* CallRecordViewController.m in Sources */,
 				241616CD1EAC3FB1003D8B14 /* main.m in Sources */,
-				2480D0361EBAB017006BB40F /* WIFIViewController.m in Sources */,
+				242E599E1F19EE720018D485 /* WIFIViewController.m in Sources */,
 				241617081EAC7750003D8B14 /* AudioRecordViewController.m in Sources */,
 				241616FF1EAC4D88003D8B14 /* ViewController.m in Sources */,
 			);
@@ -499,12 +537,17 @@
 			baseConfigurationReference = 8DAF9BE8917896702DF97138 /* Pods-CallRecord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P927RN6N64;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CallRecord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.press.CallRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CallRecord/CallRecord-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -513,12 +556,16 @@
 			baseConfigurationReference = 25059C5E352541F3D5E3D3F6 /* Pods-CallRecord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = P927RN6N64;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CallRecord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.press.CallRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CallRecord/CallRecord-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

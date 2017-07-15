@@ -10,13 +10,15 @@
 #import "CallRecordViewController.h"
 #import "AudioRecordViewController.h"
 #import "WIFIViewController.h"
+#import "CallRecord-Swift.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 
-@property (nonatomic,strong) NSArray *datasourcesArr;
+@property (nonatomic,strong) NSArray *dataSourcesArr;
+@property (nonatomic,strong) NSArray *dataSourcesTitleArr;
 
 
 
@@ -34,9 +36,14 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    
     [self.tableView registerClass:[UITableViewCell class]forCellReuseIdentifier:tableViewCellIdentify];
     
     [self.view addSubview:self.tableView];
+    [self getLocalFont];
+    self.dataSourcesArr = @[@"CallRecordViewController",@"AudioRecordViewController",@"WIFIViewController",@"CycleViewController"];
+    self.dataSourcesTitleArr = @[@"电话录音",@"录音",@"获得WI-FI名称",@"轮播实现"];
+    
     
     
     
@@ -49,16 +56,10 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    return 3;
+    return self.dataSourcesTitleArr.count;
     
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    
-    return 3;
-    
-}
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -66,17 +67,10 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
     cell.textLabel.text = [NSString stringWithFormat:@"index  section %ld  row%ld",(long)indexPath.section,(long)indexPath.row];
     
     
+    NSString * title = self.dataSourcesTitleArr[indexPath.row];
+    cell.textLabel.text = title;
     if (indexPath.section == 1 && indexPath.row == 0) {
-        
-        cell.textLabel.text = @"电话录音";
-    }
-    
-    if (indexPath.section == 1 && indexPath.row == 1) {
-        
-        cell.textLabel.text = @"录音";
-    }
-    if (indexPath.section == 1 && indexPath.row == 2) {
-        cell.textLabel.text = @"获得WI-FI名称";
+        cell.textLabel.font = [UIFont fontWithName:@"Alexis 3D" size:13];
     }
     
     return cell;
@@ -90,34 +84,50 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
     
     NSLog(@"selected index  section %ld  row%ld",(long)indexPath.section,(long)indexPath.row);
     
-    if (indexPath.section == 1 && indexPath.row == 0) {
-        
-        CallRecordViewController * callRecordViewController = [[CallRecordViewController alloc]init];
-        [self.navigationController pushViewController:callRecordViewController animated:true];
-        
-        
+   
+    id controller = [[NSClassFromString(self.dataSourcesArr[indexPath.row]) alloc]init];
+    if (controller == nil) {
+        printf("into here ...");
+        controller = [[CycleViewController alloc] init];
+        /*
+            若没有这个 为空判断 由Swift 写的控制器 获取不到这个
+            添加了 校验 就可以获取到 这个 由 swift 编写的控制器
+            这个什么原理
+         
+         */
     }
+    [self.navigationController pushViewController:controller animated:YES];
     
-    if (indexPath.section == 1 && indexPath.row == 1) {
+    
+    
+    return;
+
+    
+}
+
+
+
+
+- (void)getLocalFont
+{
+    
+    NSArray *familyNames =[[NSArray alloc]initWithArray:[UIFont familyNames]];
+    NSArray *fontNames;
+    NSInteger indFamily, indFont;
+    NSLog(@"[familyNames count]===%d",[familyNames count]);
+    for(indFamily=0;indFamily<[familyNames count];++indFamily)
+    
+    {
+        NSLog(@"Family name: %@", [familyNames objectAtIndex:indFamily]);
+        fontNames =[[NSArray alloc]initWithArray:[UIFont fontNamesForFamilyName:[familyNames objectAtIndex:indFamily]]];
         
-        AudioRecordViewController *audioRecordViewController = [[AudioRecordViewController alloc]init];
-        [self.navigationController pushViewController:audioRecordViewController animated:true];
+        for(indFont=0; indFont<[fontNames count]; ++indFont)
         
-        
+        {
+            NSLog(@"Font name: %@",[fontNames objectAtIndex:indFont]);
+            
+        }
     }
-    
-    if (indexPath.section == 1 &&indexPath.row == 2) {
-        
-        WIFIViewController *viewController = [[WIFIViewController alloc]init];
-        [self.navigationController pushViewController:viewController animated:true];
-        
-        
-        
-    }
-    
-    
-    
-    
 }
 
 
@@ -129,6 +139,19 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (NSArray *)dataSourcesArr
+{
+    if (_dataSourcesArr  == nil) {
+        
+        _dataSourcesArr = [[NSArray alloc]init];
+        
+    }
+    return  _dataSourcesArr;
+}
+
+
 
 
 @end

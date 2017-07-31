@@ -67,9 +67,9 @@ static NSMutableDictionary *_musices;
     
     self.timeLabel2.text = @"";
     
-    [self setUIViewAutolayout];
-    //self.cafPathStr = [kSandboxPathStr stringByAppendingPathComponent:kCafFileName];
-    //self.mp3PathStr =  [kSandboxPathStr stringByAppendingPathComponent:kMp3FileName];
+    //[self setUIViewAutolayout];
+    self.cafPathStr = [kSandboxPathStr stringByAppendingPathComponent:kCafFileName];
+    self.mp3PathStr =  [kSandboxPathStr stringByAppendingPathComponent:kMp3FileName];
 }
 
 
@@ -124,19 +124,10 @@ static NSMutableDictionary *_musices;
 - (void)startRecordButtonAction:(UIButton *) sender
 {
     NSLog(@"startRecordButtonAction ...");
-   
-   
     //开始录音 或者继续录音
     if ([self.audioRecorder isRecording]) {
         [self.audioRecorder record];
     }
-    
-    
-    
-    
-    
-    
-    
 }
 
 - (void)stopRecordButtonAction:(UIButton *)sender
@@ -440,6 +431,7 @@ static NSMutableDictionary *_musices;
     
     if (![self.audioRecorder isRecording]) {//0--停止、暂停，1-录制中
         
+        [self.audioRecorder prepareToRecord];
         [self.audioRecorder record];//首次使用应用时如果调用record方法会询问用户是否允许使用麦克风
         self.countNum = 0;
         NSTimeInterval timeInterval =1 ; //0.1s

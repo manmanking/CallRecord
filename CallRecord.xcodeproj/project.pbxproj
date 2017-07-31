@@ -17,8 +17,11 @@
 		241616FF1EAC4D88003D8B14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241616FE1EAC4D88003D8B14 /* ViewController.m */; };
 		241617031EAC526F003D8B14 /* TimeConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 241617021EAC526F003D8B14 /* TimeConvert.m */; };
 		241617081EAC7750003D8B14 /* AudioRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241617071EAC7750003D8B14 /* AudioRecordViewController.m */; };
+		242599221F1F88CB002E17C4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242599211F1F88CB002E17C4 /* TableViewController.swift */; };
 		242E599E1F19EE720018D485 /* WIFIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E599D1F19EE720018D485 /* WIFIViewController.m */; };
 		242E59A21F19F1EC0018D485 /* CycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242E59A11F19F1EC0018D485 /* CycleViewController.swift */; };
+		242EE67D1F297FD2007B0091 /* NextTableViewVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242EE67C1F297FD2007B0091 /* NextTableViewVController.m */; };
+		24309CCD1F27383100FFE46C /* lanting.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24309CCC1F27383100FFE46C /* lanting.ttf */; };
 		24CEC9E31EF38F2F009F7BB9 /* Airmole Shaded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24CEC9E11EF38F2F009F7BB9 /* Airmole Shaded.ttf */; };
 		24CEC9E41EF38F2F009F7BB9 /* Alexis 3D.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24CEC9E21EF38F2F009F7BB9 /* Alexis 3D.ttf */; };
 		5E5E1702EFD71F52835A624A /* libPods-CallRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 787B4B707C982B3FFA6BECBE /* libPods-CallRecord.a */; };
@@ -43,10 +46,15 @@
 		241617021EAC526F003D8B14 /* TimeConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeConvert.m; path = Util/TimeConvert.m; sourceTree = "<group>"; };
 		241617061EAC7750003D8B14 /* AudioRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioRecordViewController.h; path = Function/AudioRecordHome/Controller/AudioRecordViewController.h; sourceTree = "<group>"; };
 		241617071EAC7750003D8B14 /* AudioRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioRecordViewController.m; path = Function/AudioRecordHome/Controller/AudioRecordViewController.m; sourceTree = "<group>"; };
+		241D5D0E1F28354600C8F2AA /* Hiragino Sans GB W3.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hiragino Sans GB W3.ttc"; sourceTree = "<group>"; };
+		242599211F1F88CB002E17C4 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Function/TableViewController.swift; sourceTree = "<group>"; };
 		242E599C1F19EE720018D485 /* WIFIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WIFIViewController.h; path = Function/WIFI/WIFIViewController.h; sourceTree = "<group>"; };
 		242E599D1F19EE720018D485 /* WIFIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WIFIViewController.m; path = Function/WIFI/WIFIViewController.m; sourceTree = "<group>"; };
 		242E59A01F19F1EC0018D485 /* CallRecord-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CallRecord-Bridging-Header.h"; sourceTree = "<group>"; };
 		242E59A11F19F1EC0018D485 /* CycleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CycleViewController.swift; path = Function/CycleView/CycleViewController.swift; sourceTree = "<group>"; };
+		242EE67B1F297FD2007B0091 /* NextTableViewVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NextTableViewVController.h; path = Function/NestTableView/NextTableViewVController.h; sourceTree = "<group>"; };
+		242EE67C1F297FD2007B0091 /* NextTableViewVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NextTableViewVController.m; path = Function/NestTableView/NextTableViewVController.m; sourceTree = "<group>"; };
+		24309CCC1F27383100FFE46C /* lanting.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lanting.ttf; sourceTree = "<group>"; };
 		24CEC9E11EF38F2F009F7BB9 /* Airmole Shaded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Airmole Shaded.ttf"; path = "Resources/Airmole Shaded.ttf"; sourceTree = "<group>"; };
 		24CEC9E21EF38F2F009F7BB9 /* Alexis 3D.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Alexis 3D.ttf"; path = "Resources/Alexis 3D.ttf"; sourceTree = "<group>"; };
 		25059C5E352541F3D5E3D3F6 /* Pods-CallRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallRecord/Pods-CallRecord.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +120,8 @@
 		241616CB1EAC3FB1003D8B14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				241D5D0E1F28354600C8F2AA /* Hiragino Sans GB W3.ttc */,
+				24309CCC1F27383100FFE46C /* lanting.ttf */,
 				242E59A01F19F1EC0018D485 /* CallRecord-Bridging-Header.h */,
 				241616CC1EAC3FB1003D8B14 /* main.m */,
 			);
@@ -121,6 +131,8 @@
 		241616E21EAC45A2003D8B14 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				242EE6771F297ED1007B0091 /* NestTableView */,
+				242599201F1F8896002E17C4 /* TableView */,
 				242E599F1F19F19E0018D485 /* CycleView */,
 				242E599B1F19EE550018D485 /* WIFI */,
 				241617041EAC76C0003D8B14 /* AudioRecordHome */,
@@ -249,6 +261,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		242599201F1F8896002E17C4 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				242599211F1F88CB002E17C4 /* TableViewController.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
 		242E599B1F19EE550018D485 /* WIFI */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +284,15 @@
 				242E59A11F19F1EC0018D485 /* CycleViewController.swift */,
 			);
 			name = CycleView;
+			sourceTree = "<group>";
+		};
+		242EE6771F297ED1007B0091 /* NestTableView */ = {
+			isa = PBXGroup;
+			children = (
+				242EE67B1F297FD2007B0091 /* NextTableViewVController.h */,
+				242EE67C1F297FD2007B0091 /* NextTableViewVController.m */,
+			);
+			name = NestTableView;
 			sourceTree = "<group>";
 		};
 		24CEC9E01EF38EB0009F7BB9 /* Resources */ = {
@@ -317,6 +346,7 @@
 				TargetAttributes = {
 					241616C71EAC3FB1003D8B14 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = P927RN6N64;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -347,6 +377,7 @@
 			files = (
 				24CEC9E31EF38F2F009F7BB9 /* Airmole Shaded.ttf in Resources */,
 				241616DB1EAC3FB1003D8B14 /* LaunchScreen.storyboard in Resources */,
+				24309CCD1F27383100FFE46C /* lanting.ttf in Resources */,
 				241616D81EAC3FB1003D8B14 /* Assets.xcassets in Resources */,
 				24CEC9E41EF38F2F009F7BB9 /* Alexis 3D.ttf in Resources */,
 				241616D61EAC3FB1003D8B14 /* Main.storyboard in Resources */,
@@ -409,8 +440,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				242E59A21F19F1EC0018D485 /* CycleViewController.swift in Sources */,
+				242EE67D1F297FD2007B0091 /* NextTableViewVController.m in Sources */,
 				241617031EAC526F003D8B14 /* TimeConvert.m in Sources */,
 				241616EA1EAC46EB003D8B14 /* AppDelegate.m in Sources */,
+				242599221F1F88CB002E17C4 /* TableViewController.swift in Sources */,
 				241616ED1EAC46FF003D8B14 /* BaseViewController.m in Sources */,
 				241616FB1EAC4D2D003D8B14 /* CallRecordViewController.m in Sources */,
 				241616CD1EAC3FB1003D8B14 /* main.m in Sources */,
@@ -539,11 +572,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P927RN6N64;
 				INFOPLIST_FILE = CallRecord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.press.CallRecord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CallRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CallRecord/CallRecord-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -558,11 +591,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P927RN6N64;
 				INFOPLIST_FILE = CallRecord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.press.CallRecord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CallRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CallRecord/CallRecord-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

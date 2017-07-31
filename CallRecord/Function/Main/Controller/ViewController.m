@@ -41,23 +41,14 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
     
     [self.view addSubview:self.tableView];
     [self getLocalFont];
-    self.dataSourcesArr = @[@"CallRecordViewController",@"AudioRecordViewController",@"WIFIViewController",@"CycleViewController"];
-    self.dataSourcesTitleArr = @[@"电话录音",@"录音",@"获得WI-FI名称",@"轮播实现"];
-    
-    
-    
-    
-    
-    
-    
+    self.dataSourcesArr = @[@"CallRecordViewController",@"AudioRecordViewController",@"WIFIViewController",@"CycleViewController",@"TableViewController",@"NextTableViewVController"];
+    self.dataSourcesTitleArr = @[@"$电话录音",@"¥录音",@"%获得WI-FI名称",@"轮播实现",@"倒计时",@"嵌套表格"];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
     return self.dataSourcesTitleArr.count;
-    
 }
 
 
@@ -69,12 +60,14 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
     
     NSString * title = self.dataSourcesTitleArr[indexPath.row];
     cell.textLabel.text = title;
-    if (indexPath.section == 1 && indexPath.row == 0) {
-        cell.textLabel.font = [UIFont fontWithName:@"Alexis 3D" size:13];
-    }
+//    if (indexPath.section == 1 && indexPath.row == 0) {
+//        cell.textLabel.font = [UIFont fontWithName:@"Alexis 3D" size:13];
+//    }
+    
+    //UIFont.init(name:"FZLanTingHeiS-R-GB" , size: size)
+    //cell.textLabel.font = [UIFont fontWithName:@"Hiragino Mincho ProN" size:13];
     
     return cell;
-    
     
 }
 
@@ -86,7 +79,7 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
     
    
     id controller = [[NSClassFromString(self.dataSourcesArr[indexPath.row]) alloc]init];
-    if (controller == nil) {
+    if (controller == nil && indexPath.row == 3) {
         printf("into here ...");
         controller = [[CycleViewController alloc] init];
         /*
@@ -96,6 +89,13 @@ static NSString *tableViewCellIdentify = @"tableViewCellIdentify";
          
          */
     }
+    if (controller == nil && indexPath.row == 4)
+    {
+        controller = [[TableViewController alloc] init];
+        
+    }
+    
+    
     [self.navigationController pushViewController:controller animated:YES];
     
     

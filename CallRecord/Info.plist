@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>App 使用您的相机</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>App 使用您的麦克风</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -22,6 +26,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>lanting.ttf</string>
 		<string>Airmole Shaded.ttf</string>
 		<string>Alexis 3D.ttf</string>
 	</array>
